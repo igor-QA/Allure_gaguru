@@ -12,10 +12,10 @@ repositories {
 
 allure {
     autoconfigure = true // плагин все автоматически сконфигурирует
-    version = '2.13.5'
+    version = '2.13.6'
 
     useJUnit5(){
-        version = '2.13.5'
+        version = '2.13.6'
     }
 }
 
@@ -30,7 +30,7 @@ tasks.withType(JavaCompile) {
 dependencies {
     compile("io.qameta.allure:allure-java-commons:2.13.5")
     compile("io.qameta.allure:allure-rest-assured:2.13.5")
-    compile("io.qameta.allure:allure-selenide:2.13.5")
+    compile("io.qameta.allure:allure-selenide:2.13.6")
 
     compile("io.rest-assured:rest-assured:4.3.1")
     compile("com.fasterxml.jackson.core:jackson-databind:2.11.2")
