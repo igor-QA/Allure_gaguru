@@ -40,3 +40,4 @@ target/
 .todo
 local.properties
 
+/src/main/
