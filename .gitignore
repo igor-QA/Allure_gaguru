@@ -41,3 +41,4 @@ target/
 local.properties
 
 /src/main/
+config.properties
