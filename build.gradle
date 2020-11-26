@@ -13,6 +13,7 @@ repositories {
 allure {
     autoconfigure = true // плагин все автоматически сконфигурирует
     version = '2.13.6'
+    aspectjweaver = true
 
     useJUnit5(){
         version = '2.13.6'
@@ -31,6 +32,7 @@ dependencies {
     compile("io.qameta.allure:allure-java-commons:2.13.5")
     compile("io.qameta.allure:allure-rest-assured:2.13.5")
     compile("io.qameta.allure:allure-selenide:2.13.6")
+    testImplementation "org.aspectj:aspectjweaver:1.9.5"
 
     compile("io.rest-assured:rest-assured:4.3.1")
     compile("com.fasterxml.jackson.core:jackson-databind:2.11.2")
