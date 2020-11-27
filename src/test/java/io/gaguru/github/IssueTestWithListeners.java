@@ -11,8 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byName;
-import static com.codeborne.selenide.Selectors.withText;
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.gaguru.github.config.Config.config;
@@ -49,7 +48,7 @@ public class IssueTestWithListeners {
         open(LOGIN_PAGE);
         $(css("#login_field").as("Ввод данных Пользователя")).setValue(USERNAME);
         $(css("#password").as("Ввод пароля")).setValue(PASSWORD);
-        $(named(byName("commit")).as("Подтверждение и переход в репозиторий")).click();
+        $(named(byValue("Sign in")).as("Подтверждение и переход в репозиторий")).click();
         $(css(".header-search-input").as("Поисковая строка в заголовке")).sendKeys(REPOSITORY);
         $(css(".header-search-input").as("Поисковая строка в заголовке")).submit();
         $(named( linkText(REPOSITORY)).as("Ссылка на репозиторий")).click();
@@ -57,7 +56,7 @@ public class IssueTestWithListeners {
         $(css("a.btn-primary").as("Создать новую задачу")).click();
         $(css("#assignees-select-menu").as("Назначить задачу")).click();
         $(css("span.js-username").as("Выбрать пользователя")).click();
-        $("body").click();
+        $("#assignees-select-menu").click();
         $(css("#labels-select-menu").as("Выбрать Тег")).click();
         $(named(withText(BUG_LABEL)).as("Тег Баг")).click();
         $(css("input[name='issue[title]']").as("Ввод Заголовка Задачи")).sendKeys(ISSUE_TITLE);

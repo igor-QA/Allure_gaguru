@@ -40,5 +40,5 @@ target/
 .todo
 local.properties
 
-main/java/io/gaguru/github
-config.properties
+
+

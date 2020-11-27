@@ -38,12 +38,11 @@ public class IssueTestWithSteps {
                 .savePageSource(true)
                 .screenshots(true));
     }
-
     @Test
     @DisplayName("User should be able to create the new Issue")
     public void createNewIssueWithSteps() {
         webSteps.openLoginForm();
-        webSteps.LoginAs(USERNAME, PASSWORD);
+        webSteps.loginAs(USERNAME, PASSWORD);
         webSteps.searchForRepository(REPOSITORY);
         webSteps.openRepositoryByLink(REPOSITORY);
         webSteps.openIssuesPage();
@@ -52,6 +51,6 @@ public class IssueTestWithSteps {
         webSteps.addLabelsToIssue(BUG_LABEL);
         webSteps.setIssueTitle(ISSUE_TITLE);
         webSteps.submitNewIssue();
-        webSteps.CheckIssueCreation(ISSUE_TITLE);
+        webSteps.checkIssueCreation(ISSUE_TITLE);
     }
 }

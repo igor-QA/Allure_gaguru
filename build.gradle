@@ -12,8 +12,9 @@ repositories {
 
 allure {
     autoconfigure = true // плагин все автоматически сконфигурирует
-    version = '2.13.6'
     aspectjweaver = true
+    version = '2.13.6'
+
 
     useJUnit5(){
         version = '2.13.6'
