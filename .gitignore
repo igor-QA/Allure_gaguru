@@ -39,7 +39,7 @@ target/
 /gradlew.bat
 .todo
 local.properties
-main/java/io/gaguru
+main/java/io/gaguru/github
 
 
 
