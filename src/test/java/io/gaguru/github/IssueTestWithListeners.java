@@ -56,7 +56,7 @@ public class IssueTestWithListeners {
         $(css("a.btn-primary").as("Создать новую задачу")).click();
         $(css("#assignees-select-menu").as("Назначить задачу")).click();
         $(css("span.js-username").as("Выбрать пользователя")).click();
-        $("#assignees-select-menu").click();
+        $(".select-menu-item").pressEscape();
         $(css("#labels-select-menu").as("Выбрать Тег")).click();
         $(named(withText(BUG_LABEL)).as("Тег Баг")).click();
         $(css("input[name='issue[title]']").as("Ввод Заголовка Задачи")).sendKeys(ISSUE_TITLE);

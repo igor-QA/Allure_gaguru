@@ -44,7 +44,7 @@ public class WebSteps {
     public void selectAssignee() {
         $("#assignees-select-menu").click();
         $("span.js-username").click();
-        $("#assignees-select-menu").click();
+        $(".select-menu-item").pressEscape();
     }
     @Step("Add Labels To Issue")
     public void addLabelsToIssue(String BUG_LABEL) {

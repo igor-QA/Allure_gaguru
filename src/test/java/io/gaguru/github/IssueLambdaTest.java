@@ -60,7 +60,7 @@ public class IssueLambdaTest {
             $("a.btn-primary").click();
             $("#assignees-select-menu").click();
             $("span.js-username").click();
-            $("#assignees-select-menu").click();
+            $(".select-menu-item").pressEscape();
             $("#labels-select-menu").click();
             $(withText(BUG_LABEL)).click();
             $("input[name='issue[title]']").sendKeys(ISSUE_TITLE);
