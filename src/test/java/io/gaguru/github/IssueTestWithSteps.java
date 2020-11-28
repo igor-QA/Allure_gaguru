@@ -13,8 +13,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static io.gaguru.github.config.Config.config;
 
-
-
 @Feature("Job with Issue")
 @Story("Использование Steps")
 @Owner("Pavlov Igor")
